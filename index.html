@@ -209,13 +209,7 @@ map.on('zoomend', function(e){
         });
 
 
- var sentral = L.control({position: "bottomleft"});
-sentral.onAdd = function(map) {
-    var div = L.DomUtil.create("div", "info legend");
-    div.innerHTML = '<img width="220" src="images/Logos.png">';
-    return div;
-}
-sentral.addTo(map);
+
 
 map.setView(L.latLng(34.20293,35.82518),17);
 
