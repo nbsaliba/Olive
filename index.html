@@ -177,6 +177,7 @@ switch(layer.feature.properties['Name']) {
 };
 
 
+		
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -216,7 +217,9 @@ sentral.onAdd = function(map) {
 }
 sentral.addTo(map);
 
-map.setView(L.latLng(34.20293,35.82518),17)
+map.setView(L.latLng(34.20293,35.82518),17);
+
+resetLabels([layer_Stations_2]);		
 
 
         </script>
